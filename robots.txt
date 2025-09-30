@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+User-agent: *
+Allow: /
 
+Sitemap: https://nidha-website.vercel.app/sitemap.xml
 Sitemap: https://nidha-website.vercel.app/sitemap.xml
