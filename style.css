@@ -207,4 +207,17 @@ footer a {
   .hero p {
     font-size: 1rem;
   }
-  }
+  }.hero {
+  position: relative;
+  background: url('assets/images/flyer.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.6); /* dark overlay */
+  padding: 40px;
+  border-radius: 12px;
+  display: inline-block;
+   }
