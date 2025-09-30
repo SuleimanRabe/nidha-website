@@ -1,237 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nadabo International Digital Health Academy (NIDHA)</title>
-  <meta name="description" content="NIDHA is a premier academy training nurses and health professionals with council exam preparation, clinical skills, and digital health education.">
-  <meta name="keywords" content="NIDHA, Nadabo International Digital Health Academy, Nursing, NMCN, Exam Prep, BLS, ACLS, PALS, Infection Prevention, Health Promotion">
-  <meta name="author" content="NIDHA">
+/* ===============================
+   Nadabo International Digital Health Academy (NIDHA)
+   Global Stylesheet
+   =============================== */
 
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="NIDHA — Nadabo International Digital Health Academy">
-  <meta property="og:description" content="Building Competence, Confidence, and Care through Digital Learning.">
-  <meta property="og:image" content="banner.jpg">
-  <meta property="og:type" content="website">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Brand -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="nidha-logo.png" type="image/png">
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f6f9fc;
+  color: #0c2340;
+}
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+/* Containers */
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 20px;
+}
 
-  <!-- Smooth Scrolling -->
-  <style>html{scroll-behavior:smooth}</style>
-</head>
-<body>
-  <!-- Header -->
-  <header class="shadow-sm">
-    <div class="container header-flex">
-      <a href="#home" class="brand" aria-label="NIDHA home">
-        <img src="nidha-logo.png" alt="NIDHA Logo" class="logo" loading="eager">
-        <span class="brand-text">Nadabo International Digital Health Academy</span>
-      </a>
-      <nav aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#resources">Resources</a>
-        <a href="#news">News</a>
-        <a href="#founder">Founder</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+/* Header */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  <!-- Hero -->
-  <section id="home" class="hero observe">
-    <div class="hero-inner">
-      <h1 class="reveal-up">Building Competence, Confidence, and Care through Digital Learning</h1>
-      <p class="reveal-up delay-1">November NMCN Exam is around the corner. Join our intensive, exam-focused preparation.</p>
-      <div class="cta reveal-up delay-2">
-        <a class="btn btn-primary" href="#admissions">📘 Enroll Now</a>
-        <a class="btn btn-outline" href="#courses">📚 View Courses</a>
-      </div>
-    </div>
-  </section>
+header h2 {
+  font-size: 1.2rem;
+  color: #0c2340;
+  margin-left: 10px;
+}
 
-  <!-- About -->
-  <section id="about" class="container observe">
-    <h2 class="section-title reveal-up">About the Academy</h2>
-    <div class="grid-2">
-      <div class="reveal-up">
-        <p><strong>Nadabo International Digital Health Academy (NIDHA)</strong> is a premier learning platform dedicated to training nurses and health professionals. We specialize in council exam preparation, clinical skills development, and digital health education that empowers learners to excel in their careers.</p>
-        <ul class="checklist">
-          <li><strong>Mission:</strong> Empower healthcare professionals through quality, accessible education.</li>
-          <li><strong>Vision:</strong> To be Africa’s leading digital health academy.</li>
-          <li><strong>Values:</strong> Excellence • Integrity • Innovation.</li>
-        </ul>
-      </div>
-      <div class="reveal-up delay-1 about-card">
-        <h3>Why Choose NIDHA?</h3>
-        <ul>
-          <li>Experienced nurse educators</li>
-          <li>Flexible online & physical classes</li>
-          <li>Affordable tuition (₦5,000 weekly plan)</li>
-          <li>Study materials & practice exams included</li>
-          <li>Proven success with past students</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0c2340;
+  transition: color .3s;
+}
 
-  <!-- Courses & Certifications -->
-  <section id="courses" class="container observe">
-    <h2 class="section-title reveal-up">Courses & Certifications</h2>
-    <p class="muted reveal-up">Delivered via Telegram, Microsoft Teams, Zoom, and Google Meet.</p>
-    <div class="grid-3 cards-list">
-      <div class="card reveal-up">🩺 Advanced Cardiovascular Life Support (ACLS)</div>
-      <div class="card reveal-up delay-1">🫀 Basic Life Support (BLS)</div>
-      <div class="card reveal-up delay-2">👶 Pediatric Advanced Life Support (PALS)</div>
-      <div class="card reveal-up">🧼 Effective Hand Hygiene Practices</div>
-      <div class="card reveal-up delay-1">🛡️ PPE & Safe Techniques</div>
-      <div class="card reveal-up delay-2">🏥 Infection Prevention & Control</div>
-      <div class="card reveal-up">🚑 Basic Emergency Response Skills</div>
-      <div class="card reveal-up delay-1">🌍 Managing Environmental Hazards</div>
-      <div class="card reveal-up delay-2">♻️ Principles of Environmental Sanitation</div>
-      <div class="card reveal-up">🆘 Essential Life-Saving Techniques</div>
-      <div class="card reveal-up delay-1">🍼 Fundamentals of Newborn Care</div>
-      <div class="card reveal-up delay-2">📣 Health Promotion Strategies</div>
-      <div class="card reveal-up">🗑️ Healthcare Waste Management</div>
-      <div class="card reveal-up delay-1">🎯 Smart Strategies for Exam Success</div>
-      <div class="card reveal-up delay-2">💼 Mastering Employment Interview Skills</div>
-    </div>
-    <div class="center">
-      <a class="btn btn-primary" href="#admissions">Start Your Training</a>
-    </div>
-  </section>
+nav a:hover {
+  color: #0ea5a5;
+}
 
-  <!-- Admissions -->
-  <section id="admissions" class="container observe">
-    <h2 class="section-title reveal-up">Admissions</h2>
-    <ol class="steps reveal-up">
-      <li>Select your course from the list above.</li>
-      <li>Complete the application form (link shared after inquiry).</li>
-      <li>Make your payment (contact us for details).</li>
-      <li>Receive confirmation and join your class online.</li>
-    </ol>
-    <div class="center reveal-up delay-1">
-      <a class="btn btn-outline" href="https://wa.me/2348068161689">Chat on WhatsApp</a>
-    </div>
-  </section>
+/* Hero Section */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
 
-  <!-- Student Resources -->
-  <section id="resources" class="container observe">
-    <h2 class="section-title reveal-up">Student Resources</h2>
-    <div class="grid-2">
-      <div class="card reveal-up">
-        <h3>Downloads</h3>
-        <ul>
-          <li>Lecture Notes (PDF)</li>
-          <li>Slides (PPT)</li>
-          <li>Recorded Classes</li>
-          <li>Study Guides for NMCN Exam</li>
-        </ul>
-      </div>
-      <div class="card reveal-up delay-1">
-        <h3>Practice</h3>
-        <ul>
-          <li>Quizzes & Practice Exams</li>
-          <li>OSCE Checklists</li>
-          <li>Exam Tips & Study Plans</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
 
-  <!-- News & Updates -->
-  <section id="news" class="container observe">
-    <h2 class="section-title reveal-up">News & Updates</h2>
-    <div class="grid-3">
-      <div class="card reveal-up"><strong>Announcement:</strong> November NMCN Exam Preparation Ongoing.</div>
-      <div class="card reveal-up delay-1"><strong>Webinar:</strong> Infection Prevention & Control — next session soon.</div>
-      <div class="card reveal-up delay-2"><strong>Success:</strong> Congratulations to our recent graduates!</div>
-    </div>
-  </section>
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
 
-  <!-- Founder -->
-  <section id="founder" class="container observe">
-    <h2 class="section-title reveal-up">Meet Our Founder</h2>
-    <div class="grid-2 founder-block">
-      <div class="reveal-up">
-        <img src="founder.jpg" alt="Dr. Isyaku Nadabo — Founder of NIDHA" class="founder-img" loading="lazy">
-      </div>
-      <div class="reveal-up delay-1">
-        <h3>Dr. Isyaku Nadabo (RN, RNE, BNSc, MSc, MPH, Ph.D.)</h3>
-        <p>Dr. Nadabo founded NIDHA to transform health education with practical, exam-focused teaching and digital innovation. His leadership continues to guide thousands of nurses and health workers to professional excellence.</p>
-        <ul class="bullets">
-          <li>Focus on competence-based training</li>
-          <li>Evidence-based teaching methods</li>
-          <li>Mentorship for NMCN exam success</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 5px;
+}
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="container observe">
-    <h2 class="section-title reveal-up">What Students Say</h2>
-    <div class="testimonials">
-      <p class="testimonial reveal-up">“Thanks to NIDHA, I passed my council exam at first attempt!” — <strong>RN Rabi Hassan, Zaria</strong></p>
-      <p class="testimonial reveal-up delay-1">“Practical teaching that’s easy to understand. Highly recommended.” — <strong>Jibril Musa, Gusau</strong></p>
-    </div>
-  </section>
+.btn-primary {
+  background: #0ea5a5;
+  color: #fff;
+}
 
-  <!-- Contact -->
-  <section id="contact" class="container observe">
-    <h2 class="section-title reveal-up">Contact Us</h2>
-    <div class="grid-2">
-      <div class="reveal-up">
-        <p><strong>Email:</strong> <a href="mailto:isyakunadabo69@gmail.com">isyakunadabo69@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+2348068161689">+234 806 816 1689</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348068161689">Click to chat instantly</a></p>
-        <p><strong>Social:</strong> Facebook • Instagram • YouTube</p>
-        <p><strong>Office:</strong> (Add physical address here)</p>
-      </div>
-      <div class="card reveal-up delay-1">
-        <h3>Ready to begin?</h3>
-        <p>Enroll today and join hundreds of successful NIDHA alumni.</p>
-        <a class="btn btn-primary" href="https://wa.me/2348068161689">Enroll via WhatsApp</a>
-      </div>
-    </div>
-  </section>
+.btn-primary:hover {
+  background: #098989;
+}
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-wrap">
-      <div class="footer-brand">
-        <img src="nidha-logo.png" alt="NIDHA logo small" class="logo-sm">
-        <span>NIDHA</span>
-      </div>
-      <p>© <span id="yr"></span> Nadabo International Digital Health Academy. All Rights Reserved.</p>
-    </div>
-  </footer>
+.btn-outline {
+  border: 2px solid #0ea5a5;
+  color: #0ea5a5;
+  background: #fff;
+}
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/2348068161689" class="whatsapp-float" target="_blank" aria-label="Chat with NIDHA on WhatsApp">💬</a>
+.btn-outline:hover {
+  background: #0ea5a5;
+  color: #fff;
+}
 
-  <!-- Scroll Reveal (Intersection Observer) -->
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
+/* Sections */
+section {
+  padding: 70px 20px;
+}
 
-    const reveal = (entries, obs) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in');
-          obs.unobserve(e.target);
-        }
-      });
-    };
-    const io = new IntersectionObserver(reveal, {root:null, rootMargin:"0px", threshold:0.15});
-    document.querySelectorAll('.observe .reveal-up, .observe').forEach(el => io.observe(el));
-  </script>
-</body>
-</html>
+h2 {
+  color: #0ea5a5;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.testimonial {
+  margin: 15px 0;
+  font-style: italic;
+  color: #333;
+  padding: 10px;
+  border-left: 3px solid #0ea5a5;
+  background: #f9f9f9;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  line-height: 2;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: #0ea5a5;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #0c2340;
+  color: #c7d4ea;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: #c7f3ef;
+  margin: 0 8px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+  }
